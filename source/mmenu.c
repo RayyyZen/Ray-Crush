@@ -1,4 +1,4 @@
-#include "menu.h"
+#include "mmenu.h"
 
 //This function displays the menu of the game
 void displayMenu(WINDOW *win, char options[CHOICES][20], int cursor, int existSave){

@@ -1,15 +1,12 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
-LIBS = -lncursesw -lm
+LIBS = -lncurses
 SRCDIR = source
 INCDIR = include
 
 SRCS = $(wildcard $(SRCDIR)/*.c)
 OBJS = $(SRCS:$(SRCDIR)/%.c=%.o)
 TARGET = RayCrush
-
-
-
 
 all: $(TARGET)
 

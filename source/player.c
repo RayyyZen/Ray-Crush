@@ -144,17 +144,17 @@ void displayScreen(Grid grid, Player player, Timer *timer, WINDOW *win){
     mvwprintw(win,2,1,"Number of moves : %d",player.moves);
     mvwprintw(win,3,1,"Score : %d",player.score);
 
-    mvwprintw(win,4,1,"Type");
+    mvwprintw(win,4,1,"Press");
     wattron(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,4,6,"'ENTER'");
+    mvwprintw(win,4,7,"'ENTER'");
     wattroff(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,4,14,"to select a shape");
+    mvwprintw(win,4,15,"to select a shape");
 
-    mvwprintw(win,5,1,"Type");
+    mvwprintw(win,5,1,"Press");
     wattron(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,5,8,"'l'");
+    mvwprintw(win,5,9,"'l'");
     wattroff(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,5,14,"to leave the game");
+    mvwprintw(win,5,15,"to leave the game");
 
     timer->countdown=TIMELIMIT+timer->start-time(NULL);
     wattron(win,COLOR_PAIR(2) | A_BOLD);
@@ -182,15 +182,15 @@ void displayEndScreen(Grid grid, Player player, Timer timer, WINDOW *win){
     }
     displayGrid(grid,win);
     displayTitle(win);
-    mvwprintw(win,2,1,"Type");
+    mvwprintw(win,2,1,"Press");
     wattron(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,2,6,"'l'");
+    mvwprintw(win,2,7,"'l'");
     wattroff(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,2,10,"to leave the game");
+    mvwprintw(win,2,11,"to leave the game");
 
-    mvwprintw(win,3,1,"Type");
+    mvwprintw(win,3,1,"Press");
     wattron(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,3,6,"'r'");
+    mvwprintw(win,3,7,"'r'");
     wattroff(win,COLOR_PAIR(3) | A_BOLD);
-    mvwprintw(win,3,10,"to restart the game");
+    mvwprintw(win,3,11,"to restart the game");
 }

@@ -1,5 +1,5 @@
-# Ignore tous les fichiers .bin
+# Ignore all the .bin files
 *.bin
 
-# Ignore les fichiers exécutables RayCrush
+# Ignore RayCrush executable files
 RayCrush

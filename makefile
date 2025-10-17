@@ -6,7 +6,7 @@ INCDIR = include
 
 SRCS = $(wildcard $(SRCDIR)/*.c)
 OBJS = $(SRCS:$(SRCDIR)/%.c=%.o)
-TARGET = RayCrush
+TARGET = Ray-Crush
 
 all: $(TARGET)
 

@@ -15,7 +15,8 @@
 
 1. **Install the `ncurses` library with the following command :** 
 ```sh
-sudo apt-get install libncurses5-dev libncursesw5-dev libncurses5 libncursesw5
+sudo apt update
+sudo apt install libncurses5-dev libncursesw5-dev
 ```
 
 2. **Clone the repository :** 
@@ -25,7 +26,7 @@ git clone https://github.com/RayyyZen/Ray-Crush.git
 
 3. **Move into the project folder :** 
 ```sh
-cd RayCrush
+cd Ray-Crush
 ```
 
 4. **Compile and run the project :**
@@ -34,7 +35,7 @@ make run
 ```
 - **OR**
 ```sh
-make && ./RayCrush
+make && ./Ray-Crush
 ```
 
 ## Game instructions
